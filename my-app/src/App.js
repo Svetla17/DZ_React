@@ -30,27 +30,29 @@ function ReviewsItem() {
 function App () {
   return (
     <>
-  {/* // <div className="App"> 
-      //   <BrowserRouter> 
-      //       <Menu></Menu>
-      //     <Routes> 
-      //       <Route path="/" element={<Home />}/>            
-      //       <Route path="contacts" element={<Contacts />}/>              
-      //       <Route path="reviews" element={<Reviews />} > 
-      //         <Route path="reviewsItem" element={<ReviewsItem />} />            
-      //       </Route>
-      //       <Route path="*" element={<Page404 />} />           
-      //     </Routes>         
-  //        </BrowserRouter>
-    
-  //      </div> */}
-              
-          <div className="wrapper">
+        {/* <div className="wrapper">
             <Header/>
             <Content/>
             <Sitebar/>
             <Footer/>
-          </div>
+        </div> */}
+
+        <div className="App"> 
+           <BrowserRouter> 
+              <Menu></Menu>
+            <Routes> 
+               <Route path="/" element={<Home />}/>            
+               <Route path="contacts" element={<Contacts />}/>              
+               <Route path="reviews" element={<Reviews />} > 
+                 <Route path="reviewsItem" element={<ReviewsItem />} />            
+               </Route>
+               <Route path="*" element={<Page404 />} />           
+             </Routes>         
+            </BrowserRouter>
+      
+        </div> 
+              
+          
 
     </>
 
