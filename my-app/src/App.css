@@ -4,3 +4,16 @@
   
 }
 
+.list {
+  max-width: 500px;
+  font-size: 15px;
+  border: 1px solid green;
+  margin: 0 auto;  
+  text-align: end;
+ 
+}
+
+.spanList {
+  text-align: end;
+  margin-right: 20rem;
+}

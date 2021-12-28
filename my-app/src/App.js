@@ -21,42 +21,28 @@ import Header from './Layout/Layout/Header';
 import Content from './Layout/Layout/Content';
 import Sitebar from './Layout/Layout/Sidebar';
 import Footer from './Layout/Layout/Footer';
+import { createStore, combineReducers } from 'redux'
+import {createSlice, configureStore} from "@reduxjs/toolkit"
+import {Provider} from "react-redux"
+import Product from "./store/store/Product"
 
-function ReviewsItem() {
-  return <h3>{}</h3>;
+import TodoForm from './todo/TodoForm';
+import TodoList from './todo/TodoList';
+import TotalCompleteItems from './todo/TotalCompleteItems';
 
-} 
 
-function App () {
-  return (
-    <>
-        {/* <div className="wrapper">
-            <Header/>
-            <Content/>
-            <Sitebar/>
-            <Footer/>
-        </div> */}
 
-        <div className="App"> 
-           <BrowserRouter> 
-              <Menu></Menu>
-            <Routes> 
-               <Route path="/" element={<Home />}/>            
-               <Route path="contacts" element={<Contacts />}/>              
-               <Route path="reviews" element={<Reviews />} > 
-                 <Route path="reviewsItem" element={<ReviewsItem />} />            
-               </Route>
-               <Route path="*" element={<Page404 />} />           
-             </Routes>         
-            </BrowserRouter>
-      
-        </div> 
-              
-          
+const App = () => {
+	return (
+		<div className='container'>
+			<h1>Todo App</h1>
+			<TodoForm />
+			<TodoList  />
+			<TotalCompleteItems />
+		</div>
+	);
+};
 
-    </>
 
-  );
-  }
 
 export default App;
